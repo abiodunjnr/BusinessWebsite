@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+	<html>
+	<head>
+
+	<meta charset="utf-8" />  
+    <title>Home page</title>  
+    <style type="text/css">  
+        body {  
+            margin: 0;  
+            background: #e6e6e6;  
+        }  
+        .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+    </style>  
+		<title>Home Page
+
+    </style>
+
+		</title>
+
+		<style>
+		#leftbox {
+			float: left;
+			background: white;
+			width: 25%;
+			height: 280px;
+		}
+		#middlebox{
+			float: left;
+			background: white;
+			width: 25%;
+			height: 280px;
+		}
+		#rightbox{
+			float: left;
+			background: white;
+			width: 25%;
+			height: 280px;
+		}
+
+		h1{
+			color: white;
+			text-align: center;
+		}
+
+		</style>
+	</head>
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+
+		img{
+			width: 270px;
+			border: 1px solid black;
+		}
+
+		.container {
+			position: relative;
+			text-align: center;
+			color: #0047AB;
+		}
+		.centered{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+
+		</style>
+		
+
+
+		<style>
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #0047AB; 
+		}
+		 li{
+		 	float: left;
+		 }
+		 li a{
+		 	display: block;
+		 	color: white;
+		 	text-align: center;
+		 	padding: 14px 16px;
+		 	text-decoration: none;
+		 }
+		 li a:hover:not(.active){
+		 	background-color: #0047AB;
+		 }
+		 .active{
+		 	background-color: #4CAF50;
+		 }
+		</style>
+
+	<body>
+		<style>
+			p.small{
+				line-height: 0.7;
+			}
+	</style>
+
+			<pre style="background-color: #0047AB; text-align: right; color: #b2beb5; word-spacing: 10px">
+			 				
+			 MyAccount  Basket  Checkout 
+			 </pre>
+			<pre style="color:#0047AB; float: right; word-spacing: 20px "> +353(0)614486165   info@millflowers.ie</pre>
+	<img style="float: left" src="logo1.jpg"  width="130" height="40"> </img>
+	<br>	
+	<br>	
+		<h6> ARTISAN FLOWER ARRANGEMENT <input style="float: right" type="text" placeholder = "Search" id="search-text-input"/>
+	<br>
+	<br>
+
+		<ul
+			
+			</li>
+			<li style="float: left"><a class="active" href="homePage.html"> Mill Flowers </a></li>
+			<li><a href="homePage.html">Home </a></li>
+			<li><a href="aboutUs.html">About Us </a></li>
+			<li><a href="Category.html">Buy Online </a></li>
+			<li><a href="Category.html">Weddings </a></li>
+			<li><a href="#Contact">Contact Us </a></li>
+		</ul>
+<br>
+	
+	<div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="Image5.png" />  
+            <div class="content">Flowers  for every ocassion <br>
+            Buy one of our fabulous bouquets online </div>  
+
+        </div>   
+        <div class="showSlide fade">  
+            <img src="m5610057-AdobeStock_158255527.jpg"/>  
+            <div class="content">Amazing table arrangement <br>
+            Decorate our dinner table with our beautiful arrangement </div> 
+        </div>  
+        <div class="showSlide fade">  
+            <img src="wedding.jpg"/>  
+             <div class="content">Planning a wedding <br>
+            We are experts in wedding flowers </div> 
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)"><</a>  
+        <a class="right" onclick="nextSlide(1)">></a>  
+    </div>  
+
+
+
+    <script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+</script>   
+
+
+
+<br>
+	<div>	
+		<div id="boxes">
+			<div id="leftbox">
+				<h2 style="text-align:center; color: black"> Shop Online</h2>
+				<img src="white400_square.png"  style="float: center" width="300" height="300" >
+				<br>
+				Order amazing flowers and have them <br>
+				delivered to someone special. We <br>
+				offer a next day delivery service
+				locally.
+				<br>
+				<button style="background: #0047AB; color: white" type="button" >Order Online</button>
+			</div>
+
+			<div id="middlebox">
+				<h2 style="text-align:left; color: black"> Wedding flowers</h2>
+				<img src="polkadots.jpeg"  style="float: center" width="300" height="300" >
+				<br>
+				Weddings are the icing on our cakes.<br>
+				We at Mill flowers are here to help <br>
+				create lasting images and memories
+				<br>
+				<button style="background: #0047AB; color: white" type="button" >Weddings</button>
+			</div>
+
+			<div id="rightbox">
+				<h2 style="text-align:left; color: black"> Corporate Giftings</h2>
+				<img src="tulips_square.png"  style="float: left" width="300" height="300" >
+				<br>
+
+				Celebrate special occassions such as<br>
+				a retirement, the birth of a baby <br>
+				or simply to say thank you<br>
+				<button style="background: #0047AB; color: white; float:left" type="button" >Corporate Gifting</button>
+			</div>
+		</div>
+	</div>	
+
+	<br> 
+	
+
+
+	</body>
+	</html>
